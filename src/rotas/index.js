@@ -4,9 +4,13 @@ const router = express.Router()
 const empresasController = require('../controllers/empresasController')
 
 router.get('/', empresasController.home)
+
 router.get('/empresa/:id', empresasController.buscarEmpresa)
-// router.put('/atualizar/:id', empresasController.atualizarEmpresa)
+
+router.put('/editar', empresasController.editarEmpresa)
+
 router.delete('/deletar/:id', empresasController.deletarEmpresa)
+
 router.post('/criar/empresa', empresasController.criarEmpresa )
 
 

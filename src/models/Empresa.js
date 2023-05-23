@@ -8,12 +8,11 @@ module.exports = (sequelize, DataType) => {
             autoIncrement:true
         },
         nome: DataType.STRING(45),
-        endereco: DataType.STRING(45),
         rua: DataType.STRING(45),
-        numero: DataType.INTEGER,
         bairro: DataType.STRING(45),
         cidade: DataType.STRING(45),
         estado: DataType.STRING(45),
+        numero: DataType.INTEGER,
     },{
         timestamps:false,
         tableName: 'empresa'
